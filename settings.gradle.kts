@@ -1,3 +1,5 @@
+import java.net.URI
+
 pluginManagement {
     repositories {
         google {
@@ -16,6 +18,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        mavenLocal() //for testing the library locally
+//        maven { url = URI("https://jitpack.io") } //to get the library from jitpack
     }
 }
 
